@@ -91,7 +91,9 @@ func main() {
 		toFile   = flag.String("output", currentTime(), "template type")
 	)
 	flag.Parse()
-	fmt.Println(*prefix, *suffix, *fromFile, *toFile)
+
+	// debug
+	// fmt.Println(*prefix, *suffix, *fromFile, *toFile)
 
 	_fromFile := correctExtension(*fromFile, *suffix)
 	_toFile := correctExtension(*toFile, *suffix)
